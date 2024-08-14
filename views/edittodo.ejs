@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>editpage</title>
+</head>
+<body>
+    <div class="w-full h-screen bg-gray-100 pt-8">
+        <div class="bg-white p-3 max-w-md mx-auto">
+            <div class="text-center">
+                <h1 class="text-3xl font-bold">edit Todo</h1>
+                <form method="post" action="/update" class="mt-4">
+                    <label for="firstname">First name: </label>
+                    <input type="text" name="task" value="<%= singleTodo.task %>">
+                    <br>
+                    <br>
+                    <input type="submit">
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
